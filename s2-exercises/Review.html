@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Review session 2</title>
+  </head>
+  <body></body>
+
+  <!-- 3. Write a program to print out -->
+  <script>
+    // a. 7 numbers, starting from 0(no input)
+    // for (let i = 0; i < 7; i++) {
+    //   console.log(i);
+    // }
+
+    //b. n numbers, starting from 0 (input)
+    // let input = Number(prompt("Enter a number?"));
+
+    // for (let i = 0; i < input; i++) {
+    //   console.log(i);
+    // }
+
+    //c. c.	A sequence of numbers, starting from 3, ending before n, n entered by user
+    // let n = Number(prompt("Enter n"));
+
+    // for (let i = 3; i < n; i++) {
+    //   console.log(i);
+    // }
+
+    //d. A sequence of numbers, starting from c, ending before n, c and n entered by user
+    // let start = Number(prompt("Enter c"));
+    // let end = Number(prompt("Enter n"));
+
+    // for (start; start < end; start++) {
+    //   console.log(start);
+    // }
+
+    //e. A sequence of numbers, starting from c, ending before n, stepping by 3, c and n entered by user
+    // let start = Number(prompt("Enter c"));
+    // let end = Number(prompt("Enter n"));
+
+    // for (start; start < end; start += 3) {
+    //   console.log(start);
+    // }
+
+    //f. A sequence of numbers, starting from c, ending before n, stepping by s. c, n and  s entered by user
+    // let start = Number(prompt("Enter c"));
+    // let end = Number(prompt("Enter n"));
+    // let step = Number(prompt("Enter s"));
+
+    // for (start; start < end; start += step) {
+    //   console.log(start);
+    // }
+  </script>
+
+  <!-- 4. Write a program to calculate the factorial of n: (1 * 2 * 3 *... *n), n enter by user -->
+  <script>
+    // let input = Number(prompt("Enter a number"));
+    // let factorial = 1;
+    // for (let i = 1; i <= input; i++) {
+    //   factorial *= i;
+    // }
+    // alert(`The factorial of ${input} is ${factorial}`);
+  </script>
+
+  <!-- 5.	Write a program asking users their age, and then decide if they are old enough to view a 14+ content -->
+  <script>
+    // let age = Number(prompt("How old are you?"));
+
+    // if (age >= 14) {
+    //   alert("Enjoy!");
+    // } else {
+    //   alert("You are not old enough to view this content!");
+    // }
+  </script>
+
+  <!-- 6.	Write a program asking user to enter a number, x, then check if x is in the lower half or higher half of 0 - 9 range -->
+  <script>
+    // let ask = Number(prompt("Enter a number [0;9]"));
+    // if (ask >= 0 && ask <= 9) {
+    //   if (ask < 9 / 2) {
+    //     alert(`${ask} is in the lower half of 9`);
+    //   } else if (ask > 9 / 2) {
+    //     alert(`${ask} is in the higher half of 9`);
+    //   } else {
+    //     alert(`${ask} is the middle of 9`);
+    //   }
+    // } else {
+    //   alert(`Out of range!`);
+    // }
+  </script>
+
+  <!-- 7.	Write a program asking user to enter two numbers, x and n, then check if x is in lower half or higher half of n -->
+  <script>
+    // let x = Number(prompt("x = "));
+    // let n = Number(prompt("n = "));
+
+    // if (x < n / 2) {
+    //   alert(`${x} is in the lower half of ${n}`);
+    // }
+    // else if(x > n/2){
+    //   alert(`${x} is in the higher half of ${n}`);
+    // }
+    // else{
+    //   alert(`${x} is in the middle of ${n}`);
+    // }
+  </script>
+
+  <!-- 8.	Write a script to check if a number is even (divisible by 2) or odd number -->
+  <script>
+    // let inputNum = Number(prompt("Enter a number"));
+
+    // if (inputNum % 2 === 0) {
+    //   alert(`${inputNum} is an even number`);
+    // } else {
+    //   alert(`${inputNum} is an odd number`);
+    // }
+  </script>
+
+  <!-- 9.	Write a program to print out -->
+  <script>
+    // a. 6 L’s and H’s, half L’s, half H’s (L means low, H means high)
+    // for (let i = 0; i < 6; i++) {
+    //   if (i < 3) {
+    //     console.log("L");
+    //   } else {
+    //     console.log("H");
+    //   }
+    // }
+
+    // b. n L’s and H’s in total, n entered by user
+    // let n = Number(prompt("Enter n"))
+    // for(let i = 0; i<n; i++){
+    //     if (i < n/2) {
+    //     console.log("L");
+    //   } else {
+    //     console.log("H");
+    //   }
+    // }
+
+    // c. 8 1’s and 0’s in total, consecutively
+    // for (let i = 0; i < 8; i++) {
+    //   if (i % 2 === 0) {
+    //     console.log("0");
+    //   } else {
+    //     console.log("1");
+    //   }
+    // }
+
+    // d. n 1’s and 0’s in total, consecutively, n entered by user
+    // let inputNum = Number(prompt("Enter the total number of 1's and 0's?"))
+    // for (let i = 0; i < inputNum; i++) {
+    //   if (i % 2 === 0) {
+    //     console.log("0");
+    //   } else {
+    //     console.log("1");
+    //   }
+    // }
+  </script>
+
+  <!-- 10.	Write a script to calculate the BMI (Body Mass Index) of a person, the formula is BMI = mass (kg) / (height(m) x height(m)) -->
+  <script>
+    let weight = Number(prompt("Your weight in kg?"));
+    let height = Number(prompt("Your height in cm?"));
+
+    height = height / 100; //convert to meter
+
+    let BMI = (weight / Math.pow(height, 2)).toFixed(2);
+
+    alert(`Your BMI is ${BMI}`);
+
+    if (BMI < 16) {
+      alert("You are severely underweight");
+    } else if (BMI >= 16 && BMI < 18.5) {
+      alert("You are underweight");
+    } else if (BMI >= 18.5 && BMI < 25) {
+      alert("You are normal");
+    } else if (BMI >= 25 && BMI <= 30) {
+      alert("You are overweight");
+    } else {
+      alert("You are obese");
+    }
+  </script>
+</html>
