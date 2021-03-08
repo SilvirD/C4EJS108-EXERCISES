@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Session 1's exercises</title>
+  </head>
+  <body></body>
+
+  <script>
+    // I) Variables and data types
+    // 1. Tên biến không hợp lệ trong Javascript:
+    // - Bắt đầu bằng số:
+    // VD: let 4p;
+    // - Chứa những ký tự đặc biệt ngoại trừ "_" và "$"
+    // VD: let me-luv-u; let cai gi?;
+    // - Trùng với keywords của Javascript
+    // VD: let break; let char;
+    // - Đặt trùng tên với biến đã có
+    // VD: let x = 1; let x = 5;
+
+    // 2. How to check a variable data types:
+    //Sử dụng toán tử typeof để kiểm tra kiểu dữ liệu
+    //VD:
+    let num = 10;
+    let str = "Cái gì ker?";
+    console.log(typeof num);
+    console.log(typeof str);
+
+    // II) Connect two columns:
+    // 1 - b
+    // 2 - a
+    // 3 - e
+    // 4 - c
+  </script>
+
+  <script>
+    // III) Declare the following variables:
+    //a.
+    let message = `Coding is great`;
+    console.log(message);
+    //b.
+    let studentCount = 0;
+    console.log(studentCount);
+
+    // IV) Update Ex3:
+    //a.
+    message = "Coding might no easy, but still great";
+    console.log(message);
+    //b.
+    studentCount = 12;
+    console.log(studentCount);
+    //c.
+    message = message.toLowerCase();
+    console.log(message);
+    //d.
+    studentCount++;
+    console.log(studentCount);
+  </script>
+
+  <script>
+    // V) Show message:
+    alert("You look beautiful today");
+
+    // VI) Write hello script:
+    let askName = prompt("Can you tell me your name?");
+    alert(`Hi ${askName}! Nice to meet you!`);
+
+    // VII) Full name:
+    let firstName = prompt("Enter your first name");
+    let lastName = prompt("Enter your last name");
+    let fullName = lastName + " " + firstName;
+    alert(`Hi ${fullName}!`);
+  </script>
+
+  <script>
+    //   VIII) Area of a square:
+    let side = Number(prompt("Enter side length of the square"));
+    let sq_Area = side * side;
+    alert(`The square area is ${sq_Area}`);
+
+    // IX) Area of a circle:
+    let rad = Number(prompt("Enter the radius of the circle"));
+    let cir_Area = (Math.PI * Math.pow(rad, 2)).toFixed(2);
+    alert(`The circle area is ${cir_Area}`);
+
+    // X) Convert Celsius to Fahrenheit:
+    let cel = Number(prompt("Enter the temperature in Celsius"));
+    let fahr = cel * 1.8 + 32;
+    alert(`${cel} (C) = ${fahr} (F)`);
+  </script>
+</html>
