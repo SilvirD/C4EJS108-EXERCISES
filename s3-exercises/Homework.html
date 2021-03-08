@@ -209,8 +209,8 @@
   </script> -->
 
   <!-- 10. Sequence of names, separated by commas. Create a new array, each name nest in <> -->
-  <script>
-    //1. Update array
+  <!-- <script>
+    // 1. Update array
     let input = prompt("Enter a sequence of names");
     input = input.split(", ");
 
@@ -224,6 +224,36 @@
     }
     console.log(`${oldSeq.join(", ")} => ${input.join(", ")}`);
 
+    // 2. Array map
+    let inputMap = prompt("Enter a sequence of names");
+    inputMap = inputMap.split(", ");
 
-  </script>
+    console.log(inputMap);
+
+    let map = inputMap.map((val, i, inputMap) => {
+      return `<${val}>`;
+    });
+
+    console.log(map);
+    console.log(inputMap + ` => ` + map);
+  </script> -->
+
+  <!-- 11.  -->
+  <!-- <script>
+    // 1. Loop
+    let seqNum = prompt("Enter a sequence of numbers, separated by commas (,)");
+    seqNum = seqNum.split(",");
+    let seqOdd = [];
+    for (let i = 0; i < seqNum.length; i++) {
+      if (seqNum[i] % 2 === 1) {
+        seqOdd.push(seqNum[i]);
+      }
+    }
+    console.log(`Loop: ${seqNum.join(", ")} => ${seqOdd.join(", ")}`);
+
+    //2. Filter
+    let filt = seqNum.filter((num) => num % 2 === 1);
+    console.log(`Filter: `,seqNum + " => " + seqOdd);
+
+  </script> -->
 </html>
