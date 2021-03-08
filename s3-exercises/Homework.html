@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Session 3's exercises</title>
+  </head>
+
+  <body></body>
+
+  <!-- 1. Variable swap -->
+  <!-- <script>
+    //c1:
+    let a = 3;
+    let b = 4;
+    console.log(a, b);
+    [a, b] = [b, a];
+    console.log(a, b);
+
+    //c2: temp
+    let x = 5;
+    let y = 6;
+    console.log(x, y);
+
+    let tmp = x;
+    x = y;
+    y = tmp;
+    console.log(x, y);
+  </script> -->
+
+  <!-- 2. Split string into array -->
+  <!-- <script>
+    let str = "Hello beauty there";
+    let res = str.split(" ");
+    let arr = [];
+    arr.push(res);
+    console.log(arr);
+  </script> -->
+
+  <!-- 3. Spread opertator (...) -->
+  <!-- <script>
+    let numArr = [1, 2, 4, 5, 6, 7, 8, 12];
+    console.log(...numArr);
+  </script> -->
+
+  <!-- 4. Clothes shop CRUD -->
+  <!-- <script>
+    let product = ["Jeans", "T-Shirt", "Socks"];
+    let cmd;
+    while (true) {
+      cmd = prompt(
+        "Hi there, welcome to shop admin panel, what do you want (C, R, U, D)?"
+      );
+
+      //Create
+      if (cmd.toLowerCase() === "c") {
+        let newProd = prompt("Enter the name of the new item");
+        product.push(newProd);
+        alert("Done");
+      }
+      //Read
+      else if (cmd.toLowerCase() === "r") {
+        console.log(`The current items are: `);
+        for (let i = 0; i < product.length; i++) {
+          console.log(`${i + 1}. ${product[i]}`);
+        }
+        break;
+      }
+      //Update
+      else if (cmd.toLowerCase() === "u") {
+        let updPos = prompt("Enter the position you want to update?");
+        updPos = Number(updPos);
+        if (updPos <= product.length) {
+          let updProd = prompt("Enter the new name?");
+          product[updPos - 1] = updProd;
+          alert("Done");
+        } else {
+          alert("We don't have that!");
+        }
+      }
+      //Delete
+      else if (cmd.toLowerCase() === "d") {
+        let delPos = prompt("Delete position?");
+        delPos = Number(delPos);
+        if (delPos <= product.length) {
+          product.splice(delPos - 1, 1);
+          alert("Done");
+        } else {
+          alert("We don't have that!");
+        }
+      }
+      //Invalid command
+      else {
+        alert("This command is not supported!");
+      }
+    }
+  </script> -->
+
+  <!-- 5. Sequence of Numbers. SUM <Split commas> -->
+  <!-- <script>
+    let sum = 0;
+    let seqNum = prompt("Enter a sequence of numbers, separated by commas (,)");
+    seqNum = seqNum.split(",");
+
+    if (!seqNum.some(isNaN)) {
+      for (let i = 0; i < seqNum.length; i++) {
+        sum += Number(seqNum[i]);
+      }
+      console.log(seqNum);
+      console.log(`The total of this sequence of numbers is: ${sum}`);
+    } else {
+      console.log(
+        "Your sequence can only contain numbers, separated by commas"
+      );
+    }
+  </script> -->
+
+  <!-- 6. Sequence of Numbers. MIN <Split commas> -->
+  <!-- <script>
+    let seqNum = prompt("Enter a sequence of numbers, separated by commas (,)");
+    seqNum = seqNum.split(",");
+
+    let min = Number(seqNum[0]);
+    if (!seqNum.some(isNaN)) {
+      for (let i = 0; i < seqNum.length; i++) {
+        if (min > Number(seqNum[i])) {
+          min = Number(seqNum[i]);
+        } else {
+          min = min;
+        }
+      }
+      console.log(seqNum);
+      console.log(`The minimum of this sequence of numbers is: ${min}`);
+    } else {
+      console.log(
+        "Your sequence can only contain numbers, separated by commas"
+      );
+    }
+  </script> -->
+
+  <!-- 7. Create an array has 5 or more numbers, input -> find that number in the array -->
+  <!-- <script>
+    const numArr = [1, 3, 4, 5, 9];
+    if (numArr.length < 5 || numArr.some(isNaN)) {
+      alert("Your array must contain 5 or more numbers. Check again!");
+    } else {
+      let numInput = Number(prompt("Enter a number"));
+      let index = numArr.indexOf(numInput);
+      if (numArr.includes(numInput)) {
+        alert(`${numInput} is FOUND in my array at index ${index}`);
+      } else {
+        alert(`${numInput} is NOT FOUND in my array`);
+      }
+      console.log(numArr);
+    }
+  </script> -->
+
+  <!-- 8. Shepherd -->
+  <!-- <script>
+    //8.1 Array represents the size of the flock
+    let myName = "Tran Trong Duc";
+    let sheepSize = [5, 30, 50, 25, 60, 7, 9, 10, 12];
+    console.log(`Hello, my name is ${myName} and this is my sheep sizes:`);
+    console.log(...sheepSize);
+
+    //8.2 Max size to shear
+    let maxSize = Math.max(...sheepSize);
+    console.log(`\nNow my biggest sheep has size ${maxSize}, let's shave it`);
+
+    //8.3 After shearing, the size will be returned to default: 8 <JS indexOf>
+    let defSize = 8;
+    let maxIndex = sheepSize.indexOf(maxSize);
+    sheepSize[maxIndex] = defSize;
+    console.log(`\nAfter shearing, here is my flock:`);
+    console.log(...sheepSize);
+
+    // 8.4 + 8.5 In the following month, every size +50
+    for (let i = 1; i <= 4; i++) {
+      console.log(`\nMONTH ${i}`);
+      for (let i = 0; i < sheepSize.length; i++) {
+        sheepSize[i] += 50;
+      }
+      console.log(
+        "One month has passed, my sheeps has grown, here are their sizes:"
+      );
+      console.log(...sheepSize);
+
+      maxSize = Math.max(...sheepSize);
+      console.log(`\nNow my biggest sheep has size ${maxSize}, let's shave it`);
+
+      defSize = 8;
+      maxIndex = sheepSize.indexOf(maxSize);
+      sheepSize[maxIndex] = defSize;
+      console.log(`\nAfter shearing, here is my flock:`);
+      console.log(...sheepSize);
+    }
+
+    //8.6 SELL IT ALL, CALCULATE THE MONEY WE WOULD HAVE
+    console.log(...sheepSize);
+    let totalSize = 0;
+    let currUnit = 25;
+    for (let i = 0; i < sheepSize.length; i++) {
+      totalSize += sheepSize[i];
+    }
+    let totalMoney = totalSize * currUnit;
+    console.log(`My flock has size in total: ${totalSize}`);
+    console.log(`I would get ${totalSize} * ${currUnit} = ${totalMoney}`);
+  </script> -->
+
+  <!-- 10. Sequence of names, separated by commas. Create a new array, each name nest in <> -->
+  <script>
+    //1. Update array
+    let input = prompt("Enter a sequence of names");
+    input = input.split(", ");
+
+    let oldSeq = [];
+    for (let i = 0; i < input.length; i++) {
+      oldSeq.push(input[i]);
+    }
+
+    for (let i = 0; i < input.length; i++) {
+      input[i] = `<${input[i]}>`;
+    }
+    console.log(`${oldSeq.join(", ")} => ${input.join(", ")}`);
+
+
+  </script>
+</html>
