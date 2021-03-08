@@ -126,8 +126,6 @@
       for (let i = 0; i < seqNum.length; i++) {
         if (min > Number(seqNum[i])) {
           min = Number(seqNum[i]);
-        } else {
-          min = min;
         }
       }
       console.log(seqNum);
@@ -142,17 +140,31 @@
   <!-- 7. Create an array has 5 or more numbers, input -> find that number in the array -->
   <!-- <script>
     const numArr = [1, 3, 4, 5, 9];
+
+    // c1
     if (numArr.length < 5 || numArr.some(isNaN)) {
       alert("Your array must contain 5 or more numbers. Check again!");
     } else {
       let numInput = Number(prompt("Enter a number"));
       let index = numArr.indexOf(numInput);
+
       if (numArr.includes(numInput)) {
         alert(`${numInput} is FOUND in my array at index ${index}`);
       } else {
         alert(`${numInput} is NOT FOUND in my array`);
       }
       console.log(numArr);
+    }
+
+    //c2:
+    let nhap = Number(prompt("Enter a number"))
+    
+    if(numArr.indexOf(nhap) >= 0){
+      alert(`${nhap} is FOUND in my array at index ${numArr.indexOf(nhap)}`);
+    }
+    else{
+      alert(`${nhap} is NOT FOUND in my array`);
+
     }
   </script> -->
 
