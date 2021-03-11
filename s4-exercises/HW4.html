@@ -1,0 +1,237 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SESSION 4's HOMEWORK - OBJECT</title>
+  </head>
+  <body></body>
+  <!-- 4. Dictionary -->
+  <!-- <script>
+    let dict = {
+      debug:
+        "The process of figuring out why your program has a certain error and how to fix it",
+      done:
+        "When your task is complete, the only thing you have to do is to wait for users to use it (no additional codes or actions needed)",
+      deflect: "The formal word for ‘error’",
+      pm:
+        "The short version of Project Manager, the person in charge of the final result of a project",
+      ui_ux:
+        "UI means User Interface, UX mean User Experience, are the process to define how your products looks and feels",
+    };
+    // console.log(dict)
+
+    alert("Hi there, this is dev dictionary");
+    while (true) {
+      let keyWord = prompt("Enter a keyword");
+
+      if (dict[keyWord]) {
+        alert(`${keyWord}\n${dict[keyWord]}`);
+      } else {
+        let addProp = prompt(
+          `We could not find your word: ${keyWord}, leave your explaination`
+        );
+        if (addProp) {
+          dict[keyWord] = addProp;
+          alert("Done");
+        } else {
+          alert("Please leave your explaination");
+        }
+      }
+    }
+
+
+  </script> -->
+
+  <!-- 5. Product -->
+  <!-- <script>
+    //Initialize array and objects
+    // let product = [];
+    // let item1 = {
+    //   name: "Xiaomi portable charger 20000mah",
+    //   price: 428,
+    //   brand: "Xiaomi",
+    //   category: "Charger",
+    //   color: "White",
+    // };
+    // let item2 = {
+    //   name: "VSmart Active 1",
+    //   price: 5487,
+    //   brand: "VSmart",
+    //   category: "Phone",
+    //   color: "Black",
+    // };
+    // let item3 = {
+    //   name: "IPhone X",
+    //   price: 21490,
+    //   brand: "Apple",
+    //   category: "Phone",
+    //   color: "Gray",
+    // };
+    // let item4 = {
+    //   name: "Samsung Galaxy A9",
+    //   price: 8490,
+    //   brand: "Samsung",
+    //   category: "Phone",
+    //   color: "Blue",
+    // };
+
+    //Push to array
+    // product.push(item1, item2, item3, item4);
+
+    //5.1
+    // for (let i = 0; i < product.length; i++) {
+    //   let itemName = product[i].name;
+    //   let itemPrice = product[i].price;
+    //   console.log("----------------------------------------");
+    //   console.log(`Name: ${itemName} \nPrice: ${itemPrice}`);
+    // }
+
+    //5.2 print out item based on position
+    // for (let i = 0; i < product.length; i++) {
+    //   let itemName = product[i].name;
+    //   let itemPrice = product[i].price;
+    //   console.log(`#${i + 1}. ${itemName} \n\tPrice: ${itemPrice}`);
+    // }
+    // let posInput = Number(prompt("Enter product position: "));
+    // console.clear();
+    // let item = product[posInput - 1];
+    // for (x in item) {
+    //   console.log(x + ": " + item[x]);
+    // }
+
+    //5.3 print out items based on category
+    // let cateInput = prompt("Enter your category?");
+    // for (let i = 0; i < product.length; i++) {
+    //   if (product[i].category.toLowerCase() === cateInput) {
+    //     let itemName = product[i].name;
+    //     let itemPrice = product[i].price;
+    //     console.log("----------------------------------------");
+    //     console.log(`Name: ${itemName} \nPrice: ${itemPrice}`);
+    //   } else {
+    //     console.log("We don't have that category");
+    //     break;
+    //   }
+    // }
+
+    //5.4 Add providers
+    // item1.providers = ["Phukienzero", "Dientuccc"];
+    // item2.providers = ["Tgdd", "Ddghn", "VhStore"];
+    // item3.providers = ["Tgdd"];
+    // item4.providers = ["Tgdd"];
+
+    // for (let i = 0; i < product.length; i++) {
+    //   let itemName = product[i].name;
+    //   let itemPrice = product[i].price;
+    //   let itemProviders = product[i].providers.join(" ");
+    //   console.log(`#${i + 1}. ${itemName} \n\tPrice: ${itemPrice} \n\tProviders: ${itemProviders}`);
+    // }
+
+    // 5.5 Search the products based on provider
+    // console.clear();
+    // let provInput = prompt("Enter provider: ");
+
+    //CACH 1: function inclucdes
+    // for (let i = 0; i < product.length; i++) {
+    //   if (product[i].providers.includes(provInput)) {
+    //     console.log("----------------------------------------");
+    //     for (let prop in product[i]) {
+    //       console.log(`${prop}: ${product[i][prop]}`);
+    //     }
+    //   } else {
+    //     console.log("There's no product supplied by this provider");
+    //     break;
+    //   }
+    // }
+
+    //CACH 2: indexOf
+    // for (let i = 0; i < product.length; i++) {
+    //   if (product[i].providers.indexOf(provInput) >= 0) {
+    //     console.log("----------------------------------------");
+    //     for (let prop in product[i]) {
+    //       console.log(`${prop}: ${product[i][prop]}`);
+    //     }
+    //   } else {
+    //     console.log("There's no product supplied by this provider");
+    //     break;
+    //   }
+    // }
+  </script> -->
+
+  <!-- 6. Learning tasks to become front-end developer -->
+  <!-- <script>
+    let tasks = [];
+    let objHTML = { name: "HTML", complete: false };
+    let objCSS = { name: "CSS", complete: false };
+    let objJS = { name: "Javascript", complete: false };
+    let objNode = { name: "Node package manager (npm)", complete: false };
+    let objGit = { name: "Git", complete: false };
+    let objBlank = {};
+    tasks.push(objHTML, objCSS, objJS, objNode, objGit);
+
+    //Print it out
+    function printOut() {
+      console.clear();
+      console.log(
+        "Hi there, this is your learning tasks to front end developer career"
+      );
+      for (let i = 0; i < tasks.length; i++) {
+        let done;
+        if (tasks[i].complete === false) {
+          done = " ";
+        } else {
+          done = "x";
+        }
+        console.log(`${i + 1}. [${done}] ${tasks[i].name}`);
+      }
+      console.log(
+        "---------------------------------------------------------------------"
+      );
+    }
+
+    printOut();
+
+    // Enter command
+    while (true) {
+      let cmd = prompt("Enter your command (New, Update, Delete, Complete)");
+
+      if (cmd.toLowerCase() === "new") {
+        let newTask = prompt("Enter new task:");
+        objBlank.name = newTask;
+        objBlank.complete = false;
+        tasks.push(objBlank);
+        objBlank = {};
+        printOut();
+      } else if (cmd.toLowerCase() === "update") {
+        let pos = Number(prompt("Enter position:"));
+        if (pos <= tasks.length) {
+          let newName = prompt("Enter new title:");
+          tasks[pos - 1].name = newName;
+          tasks[pos - 1].complete = false;
+          printOut();
+        } else {
+          alert("Out of range");
+        }
+      } else if (cmd.toLowerCase() === "complete") {
+        let pos = Number(prompt("Enter position:"));
+        if (pos <= tasks.length) {
+          tasks[pos - 1].complete = true;
+          printOut();
+        } else {
+          alert("Out of range");
+        }
+      } else if (cmd.toLowerCase() === "delete") {
+        let pos = Number(prompt("Enter position:"));
+        if (pos <= tasks.length) {
+          tasks.splice(pos - 1, 1);
+          printOut();
+        } else {
+          alert("Out of range");
+        }
+      } else {
+        alert("Invalid command!");
+        break;
+      }
+    }
+  </script> -->
+</html>
