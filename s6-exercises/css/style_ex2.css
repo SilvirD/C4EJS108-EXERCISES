@@ -1,0 +1,9 @@
+thead > tr > td{
+    font-weight: bold;
+    text-align: center;
+}
+
+#content{
+    border: solid 2px gray;
+    /* border-spacing: 50px; */
+}
