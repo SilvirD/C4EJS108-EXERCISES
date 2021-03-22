@@ -1,0 +1,9 @@
+I
+
+1. beforebegin - d.
+2. afterbegin - a.
+3. beforeend - c.
+4. afterend - b.
+
+II.
+
